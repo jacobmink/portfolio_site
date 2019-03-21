@@ -245,6 +245,7 @@ h6 {
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
+  height: 100px;
 }
 
 .portfolio-item .caption {
