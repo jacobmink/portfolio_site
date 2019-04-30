@@ -94,7 +94,7 @@ h6 {
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/snow_bg.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/snow_bg.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/lake_bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,6 +239,10 @@ h6 {
   max-width: 30rem;
 }
 
+#portfolio a{
+  justify-content: center;
+}
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -276,10 +280,15 @@ h6 {
   font-size: 1.2rem;
 }
 
+.portfolio-img{
+  object-fit: cover;
+}
+
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
     margin: 2px;
+    max-height: 300px;
   }
   .portfolio-item .caption {
     -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
@@ -295,9 +304,9 @@ h6 {
   }
   .portfolio-item img {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
-    /* height: 100%; */
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
